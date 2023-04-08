@@ -51,7 +51,8 @@ body {
   padding-top: 2rem;
   margin-bottom: 2rem; }
   .paragraph__list {
-    color: #858689; }
+    color: #2e3338;
+    font-size: 2rem; }
 
 .heading-tertiary {
   font-size: 2.5rem;
@@ -83,7 +84,6 @@ body {
   border-bottom: 2px solid #ed4f2c; }
 
 .button:link, .button:visited {
-  font-size: 1.7rem;
   text-decoration: none;
   font-weight: 700;
   border: none; }
@@ -99,6 +99,7 @@ body {
   font-weight: 700; }
 
 .button--arrow {
+  font-size: 2rem;
   color: #ed4f2c;
   text-transform: capitalize; }
   .button--arrow i {
@@ -116,11 +117,11 @@ body {
   .card__text {
     max-width: 50%;
     position: absolute;
-    top: 9rem;
-    right: 1.3rem;
+    top: 6rem;
+    right: .3rem;
     background-color: #fff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
-    padding: 7rem 10rem;
+    padding: 7rem 15rem;
     border-radius: 10px; }
 
 .composition {
@@ -325,13 +326,13 @@ body {
   .section-info__box {
     width: 30%; }
 
-.section-beliefs {
+.section-about {
   padding: 5rem; }
-  .section-beliefs__heading {
+  .section-about__heading {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem; }
-  .section-beliefs .box {
+  .section-about .box {
     margin-bottom: 7rem; }
 
 .section-who {
