@@ -1,4 +1,8 @@
-* {
+html,
+body,
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -7,6 +11,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  width: 100vw;
   font-family: 'Camber', Helvetica, sans-serif;
   box-sizing: border-box;
   background-color: #f5f5f5; }
@@ -49,7 +54,13 @@ body {
       font-size: 3rem; }
   .heading-secondary--about {
     color: #333333;
-    font-size: 2.6rem; }
+    font-size: 2.6rem;
+    margin-bottom: 1rem; }
+  .heading-secondary--e-form {
+    color: #33475b;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -68,6 +79,19 @@ body {
     color: #ffffff;
     font-size: 2.2rem;
     margin-bottom: 2rem; }
+  .heading-tertiary--team {
+    position: absolute;
+    top: 7.5rem; }
+  .heading-tertiary--e-form {
+    color: #33475b;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize; }
+  .heading-tertiary--investor {
+    color: #333333;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize; }
 
 .paragraph {
   color: #333333;
@@ -96,6 +120,13 @@ body {
   .paragraph--about {
     color: #333333;
     font-size: 2rem; }
+  .paragraph--e-form {
+    color: #333333;
+    font-size: 1.1rem;
+    margin-bottom: .6rem; }
+  .paragraph--company {
+    color: #323234;
+    font-size: 2.3rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
@@ -135,6 +166,13 @@ body {
   color: #ffffff; }
   .btn--orange:not(:last-child) {
     margin-right: 20px; }
+
+.btn--more:link, .btn--more:visited {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: underline;
+  color: #ffa500; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.8rem;
@@ -251,6 +289,77 @@ body {
     align-content: center; }
     .detail__box-text {
       width: 45%; }
+
+.e-form {
+  width: 70%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 10rem 10rem; }
+  .e-form__label {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #323234;
+    display: block;
+    margin-bottom: 1rem; }
+  .e-form__input {
+    display: block;
+    width: 95%;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    padding: .65rem;
+    font-size: 1.3rem;
+    color: #343433;
+    font-family: inherit;
+    height: 4rem;
+    margin-bottom: 1.5rem; }
+    .e-form__input--name {
+      display: inline-block;
+      width: 45.5%;
+      margin-right: 2rem; }
+    .e-form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #0044a0; }
+    .e-form__input:focus:invalid {
+      border-bottom: 1px solid #ffa500; }
+    .e-form__input::-webkit-input-placeholder {
+      color: #343433;
+      text-transform: capitalize; }
+  .e-form__textarea {
+    width: 95%;
+    border: 1px solid #cfd4d8;
+    background-color: #ffffff;
+    padding: .65rem;
+    font-size: 1.3rem;
+    color: #343433;
+    font-family: inherit;
+    margin-bottom: 1.5rem; }
+    .e-form__textarea:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #0044a0; }
+    .e-form__textarea:focus:invalid {
+      border-bottom: 1px solid #ffa500; }
+    .e-form__textarea::-webkit-input-placeholder {
+      color: #343433;
+      text-transform: capitalize; }
+  .e-form__button {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    text-shadow: 0 0.1rem 0 #000000;
+    font-weight: 700;
+    box-shadow: inset 0 0.5px 0 0 #000000;
+    background-color: #ffa500;
+    color: #ffffff;
+    margin-top: 3rem; }
+
+#e-form__field {
+  margin-bottom: 5rem; }
 
 .footer {
   background-color: #151515;
@@ -424,6 +533,23 @@ body {
   width: 100%;
   height: 100%; }
 
+.portfolio {
+  display: flex;
+  justify-content: space-between; }
+  .portfolio__box {
+    width: 28%;
+    border: 1px solid #999;
+    height: 20rem;
+    position: relative; }
+  .portfolio__image {
+    width: 60%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 35%; }
+  .portfolio--one {
+    margin-bottom: 5rem; }
+
 .teammate {
   display: flex;
   justify-content: space-between; }
@@ -442,7 +568,9 @@ body {
     text-transform: capitalize;
     margin-top: -1rem; }
   .teammate--one {
-    margin-bottom: 10rem; }
+    margin-bottom: 10rem;
+    border-top: 1px solid #999;
+    padding-top: 7rem; }
 
 .text-box {
   position: absolute;
@@ -513,9 +641,47 @@ body {
 
 .section-team {
   background-color: #151515;
-  padding: 15rem 10rem; }
+  padding: 10rem 10rem;
+  position: relative; }
 
 .section-more {
+  padding: 10rem 10rem; }
+
+.section-portfolio {
+  padding: 10rem 10rem; }
+
+.section-enterpreneur {
+  margin: auto;
+  padding: 0 10rem 10rem; }
+
+.section-investor {
+  padding: 10rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-investor .investor {
+    width: 60%; }
+    .section-investor .investor__info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4rem; }
+    .section-investor .investor__box-one {
+      width: 47%; }
+    .section-investor .investor__box-two {
+      width: 47%; }
+  .section-investor .bg-image {
+    width: 35%;
+    height: auto; }
+    .section-investor .bg-image__content {
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+
+.section-button {
+  padding: 0rem 0 10rem;
+  text-align: center; }
+
+.section-apply {
   padding: 10rem 10rem; }
 
 .section-hero {
@@ -550,7 +716,7 @@ body {
 
 */
 .section-about {
-  padding: 10rem 0; }
+  padding: 10rem 10rem; }
   .section-about .about-image {
     width: 100%;
     height: 38rem; }
