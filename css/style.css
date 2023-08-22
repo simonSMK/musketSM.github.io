@@ -34,8 +34,8 @@ body {
     font-weight: 700; }
 
 .heading-secondary {
-  color: #132f3e;
-  font-size: 4rem;
+  color: #333333;
+  font-size: 5rem;
   text-transform: capitalize; }
   .heading-secondary--main::after {
     content: '';
@@ -46,6 +46,13 @@ body {
   .heading-secondary--white {
     color: #ffffff;
     font-size: 3rem; }
+    .heading-secondary--white-large {
+      font-size: 5rem; }
+  .heading-secondary--dark {
+    color: #333333;
+    font-size: 3rem; }
+    .heading-secondary--dark-large {
+      font-size: 5rem; }
   .heading-secondary--contact {
     color: #ffffff;
     font-size: 5rem; }
@@ -61,6 +68,10 @@ body {
     font-size: 5rem;
     margin-bottom: 2rem;
     text-align: center; }
+  .heading-secondary--investor {
+    color: #ffffff;
+    font-size: 5rem;
+    margin-bottom: 1rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -92,6 +103,11 @@ body {
     font-size: 2.6rem;
     margin-bottom: 1rem;
     text-transform: capitalize; }
+  .heading-tertiary--investors {
+    color: #ffffff;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize; }
 
 .paragraph {
   color: #333333;
@@ -99,7 +115,7 @@ body {
   .paragraph--info {
     color: #ffffff;
     font-size: 3rem;
-    width: 70%;
+    width: 100%;
     margin: auto; }
   .paragraph--footer {
     font-size: 1.6rem;
@@ -120,6 +136,9 @@ body {
   .paragraph--about {
     color: #333333;
     font-size: 2rem; }
+  .paragraph--investor {
+    color: #ffffff;
+    font-size: 2rem; }
   .paragraph--e-form {
     color: #333333;
     font-size: 1.1rem;
@@ -132,13 +151,20 @@ body {
   margin-bottom: 1rem; }
 
 .u-margin-bottom {
-  margin-bottom: 6rem; }
+  margin-bottom: 10rem; }
 
 .u-margin-bottom-medium {
   margin-bottom: 3rem; }
 
 .margin-auto {
   margin: 0 auto; }
+
+.u-center {
+  text-align: center; }
+
+.border-bottom {
+  border-bottom: 1px solid #323234;
+  padding-bottom: 5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -210,6 +236,17 @@ body {
 .btn-border:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.contact {
+  color: #ffa500; }
+  .contact__email {
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: .2rem; }
+  .contact__tel {
+    text-decoration: none;
+    font-size: 1.8rem; }
 
 .bg-media {
   position: relative;
@@ -288,7 +325,7 @@ body {
     justify-content: space-between;
     align-content: center; }
     .detail__box-text {
-      width: 45%; }
+      width: 46%; }
 
 .e-form {
   width: 70%;
@@ -356,7 +393,8 @@ body {
     box-shadow: inset 0 0.5px 0 0 #000000;
     background-color: #ffa500;
     color: #ffffff;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    cursor: pointer; }
 
 #e-form__field {
   margin-bottom: 5rem; }
@@ -537,16 +575,16 @@ body {
   display: flex;
   justify-content: space-between; }
   .portfolio__box {
-    width: 28%;
-    border: 1px solid #999;
-    height: 20rem;
+    width: 30%;
+    border: 1px solid #e5e7eb;
+    height: 15rem;
     position: relative; }
   .portfolio__image {
     width: 60%;
     display: block;
     margin: auto;
     position: relative;
-    top: 35%; }
+    top: 20%; }
   .portfolio--one {
     margin-bottom: 5rem; }
 
@@ -624,41 +662,37 @@ body {
         background-color: #d4a011; }
 
 .section-form {
-  padding: 10rem 10rem;
+  padding: 10rem 0;
   display: flex;
   justify-content: space-around; }
-  .section-form .contact__email {
-    text-decoration: none;
-    font-size: 1.8rem;
-    display: inline-block;
-    margin-bottom: .2rem; }
-  .section-form .contact__tel {
-    text-decoration: none;
-    font-size: 1.8rem; }
 
 .section-detail {
-  padding: 10rem 10rem; }
+  padding: 10rem 0; }
 
 .section-team {
   background-color: #151515;
-  padding: 10rem 10rem;
+  padding: 10rem 0;
   position: relative; }
 
 .section-more {
-  padding: 10rem 10rem; }
+  padding: 10rem 0; }
+
+.section-strategy {
+  padding: 10rem 0; }
 
 .section-portfolio {
-  padding: 10rem 10rem; }
+  padding: 10rem 0; }
 
 .section-enterpreneur {
   margin: auto;
-  padding: 0 10rem 10rem; }
+  padding: 0 0 10rem; }
 
 .section-investor {
-  padding: 10rem 15rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 10rem 0; }
+  .section-investor .investment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .section-investor .investor {
     width: 60%; }
     .section-investor .investor__info {
@@ -666,9 +700,9 @@ body {
       justify-content: space-between;
       margin-top: 4rem; }
     .section-investor .investor__box-one {
-      width: 47%; }
+      width: 48.7%; }
     .section-investor .investor__box-two {
-      width: 47%; }
+      width: 48.7%; }
   .section-investor .bg-image {
     width: 35%;
     height: auto; }
@@ -677,12 +711,42 @@ body {
       object-fit: cover;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
 
+.section-get {
+  padding: 10rem 0;
+  background-color: #323234; }
+
 .section-button {
   padding: 0rem 0 10rem;
   text-align: center; }
 
-.section-apply {
-  padding: 10rem 10rem; }
+.section-contact {
+  padding: 15rem 0 20rem;
+  background-color: #323234; }
+  .section-contact .give {
+    display: flex;
+    justify-content: space-between; }
+    .section-contact .give__box {
+      width: 40%; }
+    .section-contact .give__photo {
+      background-image: linear-gradient(to right top, rgba(0, 68, 160, 0.4), rgba(255, 165, 0, 0.4)), url(../img/about-2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 30rem;
+      width: 100%;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+    .section-contact .give__text {
+      width: 100%;
+      height: 50%;
+      background-color: #fff;
+      padding: 2.5rem 5.7rem;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+
+.section-more {
+  padding: 10rem 0; }
+  .section-more .border {
+    border-top: 1px solid #323234;
+    border-bottom: 1px solid #323234;
+    padding: 10rem 0; }
 
 .section-hero {
   position: relative;
@@ -691,7 +755,7 @@ body {
     height: 60vh; }
 
 .section-story {
-  padding: 5rem 7rem;
+  padding: 5rem 0;
   width: 80%;
   margin: auto;
   background-color: #323234; }
@@ -716,7 +780,7 @@ body {
 
 */
 .section-about {
-  padding: 10rem 10rem; }
+  padding: 10rem 0; }
   .section-about .about-image {
     width: 100%;
     height: 38rem; }
