@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,58 +40,63 @@
                 <li class="header__navigation-item"><a href="index.html" class="header__navigation-link">home</a></li>
                 <li class="header__navigation-item"><a href="about.html" class="header__navigation-link">about</a></li>
                 <li class="header__navigation-item"><a href="investors.html" class="header__navigation-link">investors</a></li>
-                <li class="header__navigation-item"><a href="companies.html" class="header__navigation-link">companies</a></li>
+                <li class="header__navigation-item"><a href="companies.html" class="header__navigation-link header__navigation-link--active">companies</a></li>
                 <li class="header__navigation-item"><a href="contact.html" class="header__navigation-link header__navigation-link--button">contact us</a></li>
             </ul>
         </nav>
         </header>
-        
-        <section class="section-apply">
+
+        <section class="section-hero section-hero--contact">
+            <div class="bg-media bg-media--portfolio">
+
+                <span class="title">our portfolio</span>
+
+                <div class="text-box text-box--contact">
+                    <h1 class="heading-secondary heading-secondary--contact u-margin-bottom-small">
+                        investment portfolio
+                    </h1>
+
+                    <p class="paragraph paragraph--contact u-margin-bottom-medium">
+                        Past and current portfolio companies
+                    </p>
+
+                    <a href="apply.html" class="btn btn--orange">apply to invest</a> 
+                    <a href="companies.html" class="btn btn--orange">apply for funding</a>                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section-portfolio">
+
             <div class="row">
-                <h2 class="heading-secondary heading-secondary--main u-center u-margin-bottom-medium">
-                let's Duit
-            </h2>
+                <h2 class="heading-secondary heading-secondary--main u-margin-bottom">portfolio</h2>
+                <div class="portfolio portfolio--one">
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
 
-            <p class="paragraph paragraph--company u-margin-bottom">
-                We believe that by empowering African tech startups and scale-ups, we can create a more prosperous and equitable world for all. We do this by providing access to capital, mentorship, and other resources that can help these businesses grow and succeed. We also work to create an ecosystem that is supportive of entrepreneurship and innovation in Africa.
-            </p>
-            <form action="https://formsubmit.co/f5ed6bbe869ba9eb78dc9802c3b635b6" method="post" class="e-form">
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
 
-                <input type="text" name="form" value="form investor" style="visibility: hidden; text-transform: uppercase;">
-
-                <div class="e-form__group">
-                    <label for="e-form__name" class="e-form__label">name <sup>*</sup></label>
-                    <input type="name" name="first_name" class="e-form__input e-form__input--name" id="e-form__name" required>
-                    <input type="name" name="second_name" class="e-form__input e-form__input--name" id="e-form__name" required>
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
                 </div>
 
-                <label for="e-form__email" class="e-form__label">email <sup>*</sup></label>
-                <p class="paragraph paragraph--e-form">Please provide the best email where we can reach you.</p>
-                <input type="email" name="email" class="e-form__input" id="e-form__email" required>
+                <div class="portfolio">
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
 
-                <label for="e-form__phone" class="e-form__label">phone number <sup>*</sup></label>
-                <p class="paragraph paragraph--e-form">Please provide a phone number.</p>
-                <input type="text" name="email" class="e-form__input" id="e-form__phone" required>
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
 
-                <label for="e-form__field" class="form__label">field of work <sup>*</sup></label>
-                <p class="paragraph paragraph--e-form">Please provide a phone number.</p>
-                <select id="e-form__field" name="field of work" class="e-form__input" value="Please Select" required>
-                    <option label="Please Select"  value>Please Select</option>
-                    <option value="enterpreneur">Enterpreneur</option>
-                    <option value="Government">Government</option>
-                    <option value="Investor">Investor</option>
-                    <option value="Enterpreneur Support Organization(EPSO)">Enterpreneur Support Organization(EPSO)</option>
-                    <option value="Development Professinal">Development Professinal</option>
-                    <option value="Potential Investor">Potential Investor</option>
-                    <option value="None of the above">None of the above</option>
-                </select>
-
-                <label for="e-form__revenue" class="e-form__label">Amount  willing to invest <sup>*</sup></label>
-                <p class="paragraph paragraph--e-form">Please provide the amount you are willing to invest.</p>
-                <input type="number" name="Annual Revenue" class="e-form__input" id="e-form__revenue" required>
-
-                <button type="submit" name="submit" class="e-form__button">submit</button>
-            </form>
+                    <div class="portfolio__box">
+                        <a href="#"><img src="img/logo.png" alt="company logo" class="portfolio__image"></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -134,7 +138,7 @@
                     </h3>
 
                     <input type="email" name="Email" placeholder="Enter your email address" class="footer__input">
-                    <button type="submit" name="submit" class="footer__button">submit</button>
+                    <button class="footer__button">submit</button>
                 </div>
             </div>
 

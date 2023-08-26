@@ -8,6 +8,12 @@
     </head>
     <body>
 
+        <div class="header__logo-navigation">
+            <a href="index.html" class="header__logo-link">
+                <img src="img/logo.png" alt="website logo" class="header__logo-img">
+             </a>
+        </div>
+
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -37,7 +43,7 @@
         
         <nav class="header__navigation">
             <ul class="header__navigation-list">
-                <li class="header__navigation-item"><a href="index.html" class="header__navigation-link">home</a></li>
+                <li class="header__navigation-item"><a href="index.html" class="header__navigation-link header__navigation-link--active">home</a></li>
                 <li class="header__navigation-item"><a href="about.html" class="header__navigation-link">about</a></li>
                 <li class="header__navigation-item"><a href="investors.html" class="header__navigation-link">investors</a></li>
                 <li class="header__navigation-item"><a href="companies.html" class="header__navigation-link">companies</a></li>
@@ -59,13 +65,13 @@
                         <span class="heading-primary--sub">Empowering Africa Through Impact Investments</span>
                     </h1>
 
-                    <a href="#" class="btn btn--orange">apply to invest</a> 
-                    <a href="#" class="btn btn--orange">apply for investment</a>                    
+                    <a href="apply.html" class="btn btn--orange">apply to invest</a> 
+                    <a href="companies.html" class="btn btn--orange">apply for investment</a>                    
                 </div>
             </div>
         </section>
 
-        <section class="section-about">
+        <section class="section-about section-about--1">
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="about-description">
@@ -74,7 +80,7 @@
                             Duit Technology is a corporate venture studio based in Kenya, focused on supporting and promoting tech startups in Africa. Our primary business model involves referring these startups to potential investors.
                         </p>
 
-                        <a href="#" class="btn-text">learn more &rarr;</a>
+                        <a href="about.html" class="btn-text">learn more &rarr;</a>
                     </div>
                 </div>
 
@@ -90,7 +96,7 @@
                         our purpose
                     </h2>
                     <p class="paragraph paragraph--info">
-                        At Duit  Technology, we are at the forefront of driving positive change in Africa. Our mission is clear: to identify, support, and scale visionary startups that are tackling Africa's most pressing challenges while creating lasting social and economic impact. We believe in the power of innovation to transform lives, and we invite you to be a part of this transformative journey.
+                        At Duit  Technology, we are at the forefront of driving positive change in Africa. Our mission is clear: to identify, support, and scale visionary tech startups that are tackling Africa's most pressing challenges while creating lasting social and economic impact. We believe in the power of innovation to transform lives, and we invite you to be a part of this transformative journey.
                     </p>
                 <div class="info-block">
                     <div class="info-block__one">
@@ -100,7 +106,7 @@
                         <h2 class="heading-secondary heading-secondary--white">
                             want to start a company with us?
                         </h2>
-                        <a href="#" class="btn-border">studio &rarr;</a>
+                        <a href="companies.html" class="btn-border">studio &rarr;</a>
                     </div>
 
                     <div class="info-block__two">
@@ -110,13 +116,13 @@
                         <h2 class="heading-secondary heading-secondary--white">
                             Already working on an early-stage company?
                         </h2>
-                        <a href="#" class="btn-border">ventures &rarr;</a>
+                        <a href="companies.html" class="btn-border">ventures &rarr;</a>
                     </div>
                 </div>
                 </div>
             </section>
 
-            <section class="section-about">
+            <section class="section-about section-about--2">
                 <div class="row">
     
                     <div class="col-1-of-2">
@@ -130,7 +136,7 @@
                                 We provide access to capital to African tech startups and scale-ups through a variety of channels, including venture capital, debt financing, and grants.
                             </p>
     
-                            <a href="#" class="btn-text">work with us &rarr;</a>
+                            <a href="about.html" class="btn-text">work with us &rarr;</a>
                         </div>
                     </div>
                 </div>         
@@ -153,7 +159,7 @@
                         companies
                     </h3>
 
-                    <a href="#" class="footer__link">network of companies</a>
+                    <a href="companies.html" class="footer__link">network of companies</a>
                 </div>
 
                 <div class="footer__box-three">
@@ -162,9 +168,9 @@
                     </h3>
 
                     <ul class="footer__navigation">
-                        <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">contact</a></li>
-                        <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">investor application</a></li>
-                        <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">enterpreneur application</a></li>
+                        <li class="footer__navigation-item"><a href="contact.html" class="footer__navigation-link">contact</a></li>
+                        <li class="footer__navigation-item"><a href="apply.html" class="footer__navigation-link">investor application</a></li>
+                        <li class="footer__navigation-item"><a href="companies.html" class="footer__navigation-link">enterpreneur application</a></li>
                     </ul>
                 </div>
 
@@ -173,8 +179,10 @@
                         join our mailing list
                     </h3>
 
-                    <input type="email" name="Email" placeholder="Enter your email address" class="footer__input">
-                    <button class="footer__button">submit</button>
+                    <form action="https://formsubmit.co/f5ed6bbe869ba9eb78dc9802c3b635b6" method="post">
+                        <input type="email" name="mailing list" placeholder="Enter your email address" class="footer__input">
+                        <button type="submit" class="footer__button">submit</button>
+                    </form>
                 </div>
             </div>
 

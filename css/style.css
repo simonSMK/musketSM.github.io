@@ -56,8 +56,8 @@ body {
         letter-spacing: 1rem; } }
     @media only screen and (max-width: 36em) {
       .heading-primary--main {
-        font-size: 4rem;
-        letter-spacing: .8rem; } }
+        font-size: 3.5rem;
+        letter-spacing: .5rem; } }
   .heading-primary--sub {
     font-size: 2rem;
     letter-spacing: .6rem;
@@ -69,8 +69,8 @@ body {
         letter-spacing: .4rem; } }
     @media only screen and (max-width: 36em) {
       .heading-primary--sub {
-        font-size: 1.5rem;
-        letter-spacing: .4rem; } }
+        font-size: 1.4rem;
+        letter-spacing: .3rem; } }
 
 .heading-secondary {
   color: #333333;
@@ -82,6 +82,12 @@ body {
     width: 10px;
     display: block;
     margin: .5rem auto; }
+  @media only screen and (max-width: 48em) {
+    .heading-secondary--main {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 36em) {
+    .heading-secondary--main {
+      font-size: 2.5rem; } }
   .heading-secondary--white {
     color: #ffffff;
     font-size: 3rem; }
@@ -95,6 +101,9 @@ body {
   .heading-secondary--contact {
     color: #ffffff;
     font-size: 5rem; }
+    @media only screen and (max-width: 36em) {
+      .heading-secondary--contact {
+        font-size: 3rem; } }
     .heading-secondary--contact-sub {
       color: #333;
       font-size: 3rem; }
@@ -170,6 +179,12 @@ body {
   .paragraph--contact {
     color: #ffffff;
     font-size: 2.3rem; }
+    @media only screen and (max-width: 36em) {
+      .paragraph--contact {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 36em) {
+      .paragraph--contact {
+        font-size: 2rem; } }
   .paragraph--form {
     color: #333333;
     font-size: 2rem; }
@@ -186,6 +201,9 @@ body {
   .paragraph--company {
     color: #323234;
     font-size: 2.3rem; }
+  .paragraph--detail {
+    color: #ffffff;
+    font-size: 2rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
@@ -230,11 +248,11 @@ body {
 .btn--orange {
   background-color: #ffa500;
   color: #ffffff; }
-  .btn--orange:not(:last-child) {
-    margin-right: 20px; }
   @media only screen and (max-width: 36em) {
     .btn--orange {
-      display: block; } }
+      margin-bottom: 1rem; } }
+  .btn--orange:not(:last-child) {
+    margin-right: 20px; }
 
 .btn--more:link, .btn--more:visited {
   text-decoration: none;
@@ -250,7 +268,8 @@ body {
   border-bottom: 1px solid #ffb217;
   padding: .5rem;
   width: 30%;
-  transition: all .2s; }
+  transition: all .2s;
+  white-space: nowrap; }
 
 .btn-text:hover {
   color: #ffffff;
@@ -321,6 +340,13 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/showcase-contact.jpg"); }
   .bg-media--about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/showcase-about.jpg"); }
+  .bg-media--investor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/investor.jpg");
+    background-position: top; }
+  .bg-media--company {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/companies.jpg"); }
+  .bg-media--portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio.jpg"); }
 
 .title {
   font-size: 2rem;
@@ -359,7 +385,8 @@ body {
   padding: 5rem 0; }
 
 .detail {
-  height: 85vh;
+  height: 70rem;
+  width: 100%;
   display: flex;
   justify-content: space-between; }
   @media only screen and (max-width: 48em) {
@@ -367,11 +394,13 @@ body {
       flex-direction: column; } }
   @media only screen and (max-width: 36em) {
     .detail {
-      height: 120vh; } }
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: auto; } }
   .detail__image {
     width: 33%;
-    height: 85vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/about-1.jpg");
+    height: 70rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/approach.jpg");
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
@@ -386,7 +415,7 @@ body {
         margin-bottom: 5rem; } }
   .detail__box {
     width: 60%;
-    height: 85vh;
+    height: 70rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -396,7 +425,9 @@ body {
         width: 100%; } }
     @media only screen and (max-width: 36em) {
       .detail__box {
-        flex-direction: column; } }
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto; } }
     .detail__box-text {
       width: 46%; }
       @media only screen and (max-width: 36em) {
@@ -411,6 +442,10 @@ body {
   margin: auto;
   background-color: #ffffff;
   padding: 10rem 10rem; }
+  @media only screen and (max-width: 36em) {
+    .e-form {
+      width: 95%;
+      padding: 10rem 6rem; } }
   .e-form__label {
     font-size: 2rem;
     text-transform: capitalize;
@@ -543,6 +578,7 @@ body {
     display: block;
     padding: 0 0 1.5rem 0;
     font-size: 1.5rem;
+    color: #ffffff;
     margin-bottom: 1.4rem; }
   .footer__button {
     font-size: 1.8rem;
@@ -640,6 +676,9 @@ body {
 .row {
   padding: 0  10rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 36em) {
+    .row {
+      padding: 0 5rem; } }
   .row::after {
     content: "";
     clear: both;
@@ -671,7 +710,9 @@ body {
   padding: 10rem 0; }
   @media only screen and (max-width: 36em) {
     .info-block {
-      flex-direction: column; } }
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center; } }
   .info-block__one {
     height: 55rem;
     width: 45%;
@@ -683,7 +724,7 @@ body {
       margin-bottom: auto; }
     @media only screen and (max-width: 36em) {
       .info-block__one {
-        width: 100%;
+        width: 85%;
         margin-bottom: 10rem; } }
   .info-block__two {
     height: 55rem;
@@ -696,7 +737,7 @@ body {
       margin-bottom: auto; }
     @media only screen and (max-width: 36em) {
       .info-block__two {
-        width: 100%; } }
+        width: 85%; } }
 
 .info-image {
   width: 100%;
@@ -733,24 +774,27 @@ body {
   .navigation__background {
     width: 35%;
     height: 52rem;
-    border-radius: 2rem;
     position: fixed;
-    top: 1rem;
-    right: 2rem;
+    top: 0rem;
+    right: 0rem;
     background-color: #323234;
     z-index: 1000;
     visibility: hidden;
     opacity: 0;
     transition: all .8s ease; }
+    @media only screen and (max-width: 62em) {
+      .navigation__background {
+        width: 310px;
+        height: 52rem; } }
     @media only screen and (max-width: 48em) {
       .navigation__background {
         width: 255px;
-        height: 52rem; } }
+        height: 48rem; } }
   .navigation__nav {
     height: 40rem;
     width: 15%;
     position: fixed;
-    top: 10%;
+    top: 6%;
     right: 12rem;
     z-index: 1500;
     padding: 0 15rem;
@@ -760,7 +804,7 @@ body {
     @media only screen and (max-width: 62em) {
       .navigation__nav {
         height: 44%;
-        width: 36%;
+        width: 30%;
         right: 120px; } }
   .navigation__list {
     list-style: none;
@@ -915,14 +959,33 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 62em) {
     .header {
       display: none; } }
-  @media only screen and (max-width: 62em) {
+  @media only screen and (max-width: 48em) {
     .header {
       display: none; } }
   .header__logo-img {
     width: 45%; }
+  .header__logo-navigation {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .8s; }
+    @media only screen and (max-width: 62em) {
+      .header__logo-navigation {
+        visibility: visible;
+        opacity: 1; } }
+    @media only screen and (max-width: 48em) {
+      .header__logo-navigation {
+        visibility: visible;
+        opacity: 1; } }
+    @media only screen and (max-width: 36em) {
+      .header__logo-navigation {
+        visibility: visible;
+        opacity: 1; } }
   .header__navigation-list {
     display: flex;
     list-style: none;
@@ -937,7 +1000,12 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-weight: 400; }
+    font-weight: 400;
+    transition: all .3s; }
+    .header__navigation-link:hover {
+      color: #ffa500; }
+    .header__navigation-link--active {
+      color: #ffa500; }
     .header__navigation-link--button {
       background-color: #ffa500;
       color: #ffffff;
@@ -999,10 +1067,20 @@ body {
       display: flex;
       justify-content: space-between;
       margin-top: 4rem; }
+      @media only screen and (max-width: 36em) {
+        .section-investor .investor__info {
+          flex-direction: column; } }
     .section-investor .investor__box-one {
       width: 48.7%; }
+      @media only screen and (max-width: 36em) {
+        .section-investor .investor__box-one {
+          width: 100%;
+          margin-bottom: 2.5rem; } }
     .section-investor .investor__box-two {
       width: 48.7%; }
+      @media only screen and (max-width: 36em) {
+        .section-investor .investor__box-two {
+          width: 100%; } }
   .section-investor .bg-image {
     width: 36%;
     height: 85vh; }
@@ -1045,6 +1123,9 @@ body {
           justify-content: center; }
           .section-contact .give__box:not(:last-child) {
             margin-bottom: 10rem; } }
+      @media only screen and (max-width: 36em) {
+        .section-contact .give__box {
+          width: 95%; } }
     .section-contact .give__photo {
       background-image: linear-gradient(to right top, rgba(0, 68, 160, 0.4), rgba(255, 165, 0, 0.4)), url(../img/about-2.jpg);
       background-size: cover;
@@ -1074,6 +1155,9 @@ body {
     border-top: 1px solid #323234;
     border-bottom: 1px solid #323234;
     padding: 10rem 0; }
+
+.section-apply {
+  padding: 10rem 0; }
 
 .section-hero {
   position: relative;
@@ -1108,6 +1192,12 @@ body {
 */
 .section-about {
   padding: 10rem 0; }
+  @media only screen and (max-width: 48em) {
+    .section-about--1 {
+      padding: 2rem 0 10rem; } }
+  @media only screen and (max-width: 48em) {
+    .section-about--2 {
+      padding: 10rem 0 2rem; } }
   .section-about .about-image {
     width: 100%;
     height: 35rem; }
