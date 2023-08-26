@@ -337,7 +337,7 @@ body {
   @media only screen and (max-width: 36em) {
     .bg-media {
       margin-top: 0;
-      height: 75%; } }
+      height: 100%; } }
   .bg-media__content {
     width: 100%;
     height: 100%;
@@ -1173,6 +1173,9 @@ body {
 .section-hero {
   position: relative;
   height: 75vh; }
+  @media only screen and (max-width: 36em) {
+    .section-hero {
+      height: 60vh; } }
   .section-hero--contact {
     height: 60vh; }
 
