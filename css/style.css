@@ -1215,10 +1215,16 @@ body {
 
 */
 .section-about {
-  padding: 0 0 10rem; }
+  padding: 10rem 0 10rem; }
+  @media only screen and (max-width: 62em) {
+    .section-about--1 {
+      padding: 10rem 0 10rem; } }
   @media only screen and (max-width: 48em) {
     .section-about--1 {
       padding: 2rem 0 10rem; } }
+  @media only screen and (max-width: 62em) {
+    .section-about--2 {
+      padding: 10rem 0 10rem; } }
   @media only screen and (max-width: 48em) {
     .section-about--2 {
       padding: 10rem 0 2rem; } }
