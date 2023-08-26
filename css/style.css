@@ -56,7 +56,7 @@ body {
         letter-spacing: 1rem; } }
     @media only screen and (max-width: 36em) {
       .heading-primary--main {
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: .5rem; } }
   .heading-primary--sub {
     font-size: 2rem;
@@ -69,8 +69,7 @@ body {
         letter-spacing: .4rem; } }
     @media only screen and (max-width: 36em) {
       .heading-primary--sub {
-        font-size: 1.4rem;
-        letter-spacing: .3rem; } }
+        font-size: 1.4rem; } }
 
 .heading-secondary {
   color: #333333;
@@ -944,6 +943,9 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%; }
+  .text-box--home {
+    text-align: left;
+    width: 70%; }
   .text-box--contact {
     text-align: left;
     padding: 1rem 0rem;
