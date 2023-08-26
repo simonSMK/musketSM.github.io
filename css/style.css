@@ -1126,7 +1126,9 @@ body {
       .section-contact .give {
         flex-direction: column; } }
     .section-contact .give__box {
-      width: 44%; }
+      width: 44%;
+      border-radius: 1rem;
+      overflow: hidden; }
       @media only screen and (max-width: 48em) {
         .section-contact .give__box {
           width: 90%;
@@ -1138,15 +1140,23 @@ body {
         .section-contact .give__box {
           width: 95%; } }
     .section-contact .give__photo {
-      background-image: linear-gradient(to right top, rgba(0, 68, 160, 0.4), rgba(255, 165, 0, 0.4)), url(../img/about-2.jpg);
       background-size: cover;
       background-position: center;
       height: 30rem;
       width: 100%;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2); }
+      .section-contact .give__photo--1 {
+        background-image: url(../img/give-1.jpg); }
+      .section-contact .give__photo--2 {
+        background-image: url(../img/give-2.jpg);
+        background-position: bottom; }
       @media only screen and (max-width: 48em) {
         .section-contact .give__photo {
           height: 50rem;
+          width: 100%; } }
+      @media only screen and (max-width: 36em) {
+        .section-contact .give__photo {
+          height: 40rem;
           width: 100%; } }
     .section-contact .give__text {
       width: 100%;
@@ -1205,7 +1215,7 @@ body {
 
 */
 .section-about {
-  padding: 10rem 0; }
+  padding: 0 0 10rem; }
   @media only screen and (max-width: 48em) {
     .section-about--1 {
       padding: 2rem 0 10rem; } }
