@@ -165,10 +165,12 @@ body {
     top: 7.5rem;
     color: #151515; }
   .heading-tertiary--e-form {
-    color: #33475b;
-    font-size: 2rem;
+    color: #333333;
+    font-size: 3rem;
     margin-bottom: 2rem;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 6rem; }
   .heading-tertiary--investor {
     color: #333333;
     font-size: 2.6rem;
@@ -222,8 +224,8 @@ body {
     font-size: 2rem; }
   .paragraph--e-form {
     color: #333333;
-    font-size: 1.1rem;
-    margin-bottom: .6rem; }
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
   .paragraph--company {
     color: #323234;
     font-size: 2.3rem; }
@@ -471,7 +473,7 @@ body {
         margin-bottom: 6rem; } }
 
 .e-form {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: #ffffff;
   padding: 10rem 10rem; }
@@ -480,11 +482,14 @@ body {
       width: 95%;
       padding: 10rem 6rem; } }
   .e-form__label {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
-    color: #323234;
+    color: #333333;
     display: block;
-    margin-bottom: 1rem; }
+    margin-bottom: .4rem; }
+    .e-form__label sup {
+      color: #ffa500;
+      font-size: 2rem; }
   .e-form__input {
     display: block;
     width: 90%;
@@ -495,7 +500,7 @@ body {
     color: #343433;
     font-family: inherit;
     height: 4rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 48em) {
       .e-form__input {
         width: 100%; } }
@@ -520,13 +525,13 @@ body {
       text-transform: capitalize; }
   .e-form__textarea {
     width: 95%;
-    border: 1px solid #cfd4d8;
-    background-color: #ffffff;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
     padding: .65rem;
     font-size: 1.3rem;
     color: #343433;
     font-family: inherit;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2rem; }
     .e-form__textarea:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -551,9 +556,42 @@ body {
     color: #ffffff;
     margin-top: 3rem;
     cursor: pointer; }
+  .e-form__options {
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: 400; }
+  .e-form__checkbox {
+    margin-bottom: 1rem; }
 
 #e-form__field {
-  margin-bottom: 5rem; }
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  width: 14rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem; }
+
+#e-form__country {
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  width: 14rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem; }
+
+#e-form__model {
+  margin-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  width: 14rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem; }
 
 .footer {
   background-color: #151515;
