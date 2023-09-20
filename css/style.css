@@ -158,7 +158,7 @@ body {
     color: #333; }
   .heading-tertiary--about {
     color: #333333;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem; }
   .heading-tertiary--team {
     position: absolute;
@@ -345,20 +345,18 @@ body {
 .bg-media {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 88%;
   overflow: hidden;
   margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 0;
-  background-position: center;
-  background-size: cover;
-  opacity: .9; }
+  margin-top: 3rem; }
   @media only screen and (max-width: 48em) {
     .bg-media {
-      margin-top: 0; } }
+      margin-top: 0;
+      padding-bottom: 5rem; } }
   @media only screen and (max-width: 62em) {
     .bg-media {
-      margin-top: 0; } }
+      margin-top: 0;
+      padding-bottom: 5rem; } }
   @media only screen and (max-width: 36em) {
     .bg-media {
       margin-top: 0;
@@ -966,13 +964,16 @@ body {
 
 .teammate {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0; }
   @media only screen and (max-width: 48em) {
     .teammate {
       flex-wrap: wrap;
       justify-content: space-around; } }
   .teammate__details {
-    width: 20%; }
+    width: 30%;
+    margin-bottom: 5rem; }
     @media only screen and (max-width: 48em) {
       .teammate__details {
         width: 40%; } }
@@ -980,6 +981,8 @@ body {
       .teammate__details {
         width: 80%;
         margin-bottom: 7rem; } }
+    .teammate__details--hide {
+      opacity: 0; }
   .teammate__photo {
     background-image: url("../img/passport.jpg");
     background-position: top;
@@ -993,30 +996,32 @@ body {
     @media only screen and (max-width: 36em) {
       .teammate__photo {
         height: 50rem; } }
+    .teammate__photo--one {
+      background-image: url("../img/ceo.jpg"); }
+    .teammate__photo--two {
+      background-image: url("../img/customer_relations.jpg"); }
+    .teammate__photo--three {
+      background-image: url("../img/project_manager.jpg"); }
+    .teammate__photo--four {
+      background-image: url("../img/tech_lead.jpg"); }
+    .teammate__photo--five {
+      background-image: url("../img/business_development.jpg"); }
   .teammate__designation {
     color: #c1c1c1;
     font-size: 1.8rem;
     text-transform: capitalize;
     margin-top: -1rem; }
   .teammate--one {
-    margin-bottom: 10rem;
     border-top: 1px solid #999;
     padding-top: 7rem; }
-    @media only screen and (max-width: 36em) {
-      .teammate--one {
-        margin-bottom: 6rem; } }
 
 .text-box {
   position: absolute;
-  top: 50%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%; }
-  @media only screen and (max-width: 36em) {
-    .text-box--home {
-      text-align: left;
-      width: 70%; } }
   .text-box--contact {
     text-align: left;
     padding: 1rem 0rem;
@@ -1264,7 +1269,10 @@ body {
 
 .section-hero {
   position: relative;
-  height: 75vh; }
+  height: 75vh;
+  background-position: 30%;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/video.jpg"); }
   @media only screen and (max-width: 36em) {
     .section-hero {
       height: 60vh; } }
